@@ -1,0 +1,5 @@
+CONSTANT_FILE_PATH = "/PATH/TO/THISDIR/cpof/cpof/constant.cpp"
+CPOF_PATH = "/PATH/TO/THISDIR/cpof"
+EXPERIMENT_SCRIPT_NAME = "/PATH/TO/THISDIR/cpof/bin/test_benchmark"
+ONLINE_SCRIPT_NAME = "/PATH/TO/THISDIR/cpof/bin/test_benchmark_ONLINE"
+EXP_LOG_DIR = "/PATH/TO/THISDIR/cpof/experiments/"

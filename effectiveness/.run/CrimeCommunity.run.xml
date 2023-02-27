@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CrimeCommunity" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.examples.jsatexamples.CrimeCommunityTest" />
+    <module name="Fair-Trees-CPoF" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
