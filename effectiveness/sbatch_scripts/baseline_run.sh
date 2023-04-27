@@ -1,6 +1,6 @@
 #!/bin/bash
-source ~/.bashrc
-conda activate CPoF
+#source ~/.bashrc
+#conda activate CPoF
 #workon CPoF
 module load maven
 mvn clean compile package
@@ -38,7 +38,7 @@ for DSET in "${DATASETS[@]}"; do
   FRAMES="./results/${DSET}_${FAIR}/baseline_$DATE/"
   FRAMESTRAIN="./results/${DSET}_${FAIR}/baseline_train_$DATE/"
   PLOTS="./results/${DSET}_${FAIR}/$DATE/plots/"
-  ./java_sux.sh $RAWS
+  ./java_sh.sh $RAWS
   mkdir -p $FRAMES
   mkdir -p $FRAMESTRAIN
   mkdir $PLOTS

@@ -1,6 +1,6 @@
 #!/bin/bash
-source ~/.bashrc
-conda activate CPoF
+#source ~/.bashrc
+#conda activate CPoF
 # workon CPoF
 module load maven
 mvn clean compile package
@@ -11,7 +11,7 @@ METHODS=("thresh" "lambda")
 FAIRS=("DP" "EODDS")
 NUMSEEDS=10
 NUMTHRESH=250
-BASELINE="nah"
+BASELINE="none"
 
 run_experiment() {
   # run java
@@ -49,8 +49,8 @@ for DSET in "${DATASETS[@]}"; do
       echo $RAWSTRAIN
       mkdir -p $RAWS
       mkdir -p $RAWSTRAIN
-      ./java_sux.sh $RAWS
-      ./java_sux.sh $RAWSTRAIN
+      ./java_sh.sh $RAWS
+      ./java_sh.sh $RAWSTRAIN
 
       FRAMES="./results/${DSET}_${FAIR}/$DATE/"
       FRAMESTRAIN="./results/${DSET}_${FAIR}/train_$DATE/"
